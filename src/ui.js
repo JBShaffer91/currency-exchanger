@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const inputAmount = document.querySelector("#input-amount");
   const selectCurrency = document.querySelector("#select-currency");
   const resultDisplay = document.querySelector("#result-display");
+  const errorDisplay = document.querySelector("#error-display");
 
   // Function to handle form submission
   form.addEventListener("submit", async (event) => {
@@ -19,8 +20,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const amount = parseFloat(inputAmount.value);
     const currency = selectCurrency.value;
 
+    // Clear previous result and error messages
+    resultDisplay.textContent = "";
+    errorDisplay.textContent = "";
+
     if (isNaN(amount) || amount < 0) {
-      alert("Please enter a valid amount.");
+      errorDisplay.textContent = "Please enter a valid amount.";
       return;
     }
 
@@ -29,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const result = amount * exchangeRate;
       resultDisplay.textContent = `Converted amount: ${result.toFixed(2)} ${currency}`;
     } catch (error) {
-      resultDisplay.textContent = `Error: ${error.message}`;
+      errorDisplay.textContent = `Error: ${error.message}`;
     }
   });
 });
