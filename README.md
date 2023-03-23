@@ -40,11 +40,11 @@ npm install (or npm install -y)
 
 API_KEY=your_api_key_here
 
-5. Create a '.gitignore' file and add '.env' to it.
+5. Create a `.gitignore` file and add '.env' to it.
 
-6. Create 'webpack.config.js'. There isn't a "one size fits all" webpack build, so research and do your due-diligence to ensure it's configured correctly. You'll know if it isn't.
+6. Create `webpack.config.js`. There isn't a "one size fits all" webpack build, so research and do your due-diligence to ensure it's configured correctly. You'll know if it isn't.
 
-7. npm run build: bundles 'src' into a 'dist' directory.
+7. npm run build: bundles `src` into a `dist` directory.
 
 8. npm run start: launches application in your browser. If it doesn't do the thing, google the errors (or ask ChatGPT)
 
