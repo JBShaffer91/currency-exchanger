@@ -8,7 +8,12 @@
     "start": "webpack serve --mode development --open --hot",
     "build": "webpack --mode production"
   },
-  "keywords": ["currency", "exchange", "API", "javascript"],
+  "keywords": [
+    "currency",
+    "exchange",
+    "API",
+    "javascript"
+  ],
   "author": "Justin Shaffer",
   "license": "ISC",
   "devDependencies": {
@@ -23,6 +28,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "bootstrap": "^5.2.3",
     "core-js": "^3.8.0",
     "regenerator-runtime": "^0.13.7"
   }
